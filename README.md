@@ -12,4 +12,4 @@
 
 直接在本项目中创建issues。
 
-[开始创建](https://github.com/kingdee-cloudhub/blog/issues)
+[开始创建](https://github.com/front-end-pigs/blog/labels)
