@@ -20,4 +20,4 @@
 
 🧶直接在本项目中创建issues:
 
-[☞ 开始创建](https://github.com/front-end-pigs/blog/issues)
+[☞ 开始创建](https://github.com/front-end-pigs/blog/issues/new)
