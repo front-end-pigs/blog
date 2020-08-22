@@ -18,3 +18,18 @@ Uncaught ReferenceError: i is not defined
 3
 4
 */
+
+/**
+ * 那么接下来将以上代码转成es5代码，怎么写
+ */
+(function () {
+  for (var i = 0; i < 5; i++) {
+    (function (i) {
+      setTimeout(function () {
+        console.log(i)
+      }, 1000)
+    })(i)
+  }
+})()
+
+console.log(i)
