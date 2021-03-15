@@ -23,4 +23,4 @@
 [☞ 开始创建](https://github.com/front-end-pigs/blog/issues/new)
 
 ## 参与贡献
-[参与贡献](https://github.com/front-end-pigs/blog/issues)
+[一起参与贡献](https://github.com/front-end-pigs/blog/issues)
