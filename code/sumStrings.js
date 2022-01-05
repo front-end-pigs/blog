@@ -1,3 +1,4 @@
+// 两大数相加
 function sumStrings (a, b) {
     var res = '',
         c = 0;
