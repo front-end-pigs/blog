@@ -14,7 +14,7 @@ function takeApples (n) {
     return 1
   } else if (n === 2) {
     return 2
-  } els if (n === 3) {
+  } else if (n === 3) {
     return 4
   } else {
     return takeApples(n - 1) + takeApples(n - 2) + takeApples(n - 3)
