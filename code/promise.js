@@ -29,25 +29,23 @@ function MyPromise(executor) {
 }
 
 MyPromise.prototype.then = function(fn) {
-  const _this = this;
   if (this.status === 'resolved') {
     fn(this.value);
   }
   if (this.status === 'pending') {
-    this.resolvedCallbacks.push(function() {
-      fn(_this.value);
+    this.resolvedCallbacks.push(() => {
+      fn(this.value);
     });
   }
 };
 
 MyPromise.prototype.catch = function(fn) {
-  const _this = this;
   if (this.status === 'rejected') {
     fn(this.reason);
   }
   if (this.status === 'pending') {
-    this.rejectedCallbacks.push(function() {
-      fn(_this.reason);
+    this.rejectedCallbacks.push(() => {
+      fn(this.reason);
     });
   }
 };
