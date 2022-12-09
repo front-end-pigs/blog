@@ -15,9 +15,9 @@ class Scheduler {
         this.taskList.push(resolve)
       });
     }
-    this.count++;
+    this.count++; // 异步任务加1
     const result = await promiseCreator();
-    this.count--;
+    this.count--; // 任务跑完减1
     if (this.taskList.length > 0) {
       this.taskList.shift()();
     }
